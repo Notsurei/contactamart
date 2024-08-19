@@ -1,0 +1,140 @@
+// color
+$color1: white;
+$color2: black;
+$color3: #1E4752;
+$color4: #001524;
+$color5: #dcdadb;
+$color6: #212934;
+$color7: #8A92A6;
+$color8: #FAFAFA;
+$color9: #000000cc;
+$color10: #ffffffcc;
+$color11: red;
+$color12: #6c7592;
+$color13: rgba(255, 255, 255, 0.5);
+$color14: #656565;
+$color15: #cacaca;
+$color16: #051242;
+$color17: #ffffffcc;
+$color18: #f2f2f2;
+$color19: #f1f1f1;
+$color20: #EBE1BF80;
+$color21: #00000099;
+$color22: #DADADA;
+$color23: #255e9f;
+$color24: #000000e6;
+$color25: rgba(255, 255, 255, 0.8);
+$color26: rgba(255, 255, 255, 0.9);
+$color27: #f9f9f9;
+$color28: #ebebeb;
+$color29: #D9D9D9;
+$color30: #DDEAF6;
+$color31: #F0F0F0;
+$color32: rgba(0, 0, 0, 0.8);
+$color33: #FFFEFD;
+$color34: rgba(255, 255, 255, 0.3);
+$color35: #3c8ff9;
+$color36: rgba(188, 207, 232, 0.75);
+$color37: rgba(255, 255, 255, 0.6);
+$color38: rgba(0, 0, 0, 0.93);
+$color39: rgba(0, 0, 0, 0.7);
+$color40: #E2E3E4;
+$color41: #808080;
+$color42: #FF7882;
+$color43: #f4f6f7;
+$color44: #1E1E1E;
+$color45: #404040;
+$color46: #626262;
+$color47: #4b4b4b;
+$color48: #3D3935;
+$color49: #0c0237;
+$color52: green;
+$color53: #ffc107;
+$color54: #0b1a3a;
+$color55: #f2efef;
+$color56: #8c8989;
+$colo57: #646464;
+$color58: #f7f7f7;
+$color59: #e2e2e2;
+$color60: #F4F4F4E5;
+$color61: rgba(0, 0, 0, 0.4);
+$color62: #efead9;
+$color63: #bf2529;
+$color64: #F4F4F4;
+$color65: #CCA86A;
+$color66: #f5f5f5;
+$color67: #B4B4B4;
+$color68: #EBE1BF;
+$color69: #E8A700;
+$color70: #623812;
+$color71: #1B0C08;
+$color72: #B4B4B44D;
+$color73: #B4B4B4; 
+$color74: #AEAEAE;
+$color75: #150E06;
+$color76: #7C7C7C;
+$color77: #5f6062;
+$color78: #031E36;
+$color79: #E4E4E4;
+$color80: #EEEEEE;
+$color81: #B1BDC026;
+$color82: #FFFFFF80;
+$color83: rgba(16, 20, 23, 0.68);
+$color84: #101820;
+$color85: #A6A6A6;
+$color86: rgb(30, 71, 82, 0.7);
+
+
+$skewY1: 339deg;
+$skewY2: 340deg;
+$skewY3: 15deg;
+$skewY4: 20deg;
+$skewY5: 336deg;
+
+$rotate1: 332deg;
+$rotate2: 340deg;
+$rotate3: 25deg;
+$rotate4: 334deg;
+
+$textShadow1: 4px 4px 4px $color25, -4px 4px 4px $color25, -4px -2px 4px $color37;
+$shadow2: 5px 5px 5px 0px $color36, -2px -2px 5px 0px $color36;
+
+// social color
+$colorFacebook: #0067e4;
+$colorYoutube: #f20000;
+$colorTwitter: #4ca2e5;
+$colorLinkedin: #0071ae;
+$colorInstagram: #e2416c;
+$colorVimeo: #19aede;
+$colorTripAdvisor: #31d599;
+
+// box shadow
+$boxShadow1: 0px 10px 10px 5px rgba(0,0,0,0.1);
+$boxShadow2: 0px 0px 10px 2px #00000033;
+$boxShadow3: 0px 1px 10px 0px #0000001a;
+$boxShadow4: 5px 5px 5px 0px #0000001a;
+$boxShadow5: 0px 0px 0px 1px $color1;
+$boxShadow6: 0 0 0 8px #0a0a0a;
+$boxShadow7: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+$boxShadow8: 1px 3px 4px 0px rgba(0,0,0,0.75);
+$boxShadow9: 4px 6px 13px 0px #00000026;
+$boxShadow10: 8px 9px 15px 0px #00000033;
+$boxShadow11: -8px 9px 15px 0px #00000033;
+$boxShadow12: 180.06deg, rgba(217, 217, 217, 0) 22.25%, #1A1A1A 98.39%;
+$boxShadow13: 0px 4px 4px 0px #00000040;
+
+// general
+$heightHeader: 168px;
+$heightHeaderBottom: 70px;
+$heightHeaderIP: 60px;
+$heightBtnControl: 50px;
+$heightHeaderTop: 30px;
+
+// font family
+$font1: 'OpenSans';
+$nameFont1: "OpenSans", serif;
+$fontWeights1: 300, 400, 500, 600, 700;
+
+$font2: 'CormorantGaramond';
+$nameFont2: "CormorantGaramond", serif;
+$fontWeights2: 700;

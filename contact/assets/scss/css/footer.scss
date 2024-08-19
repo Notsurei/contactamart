@@ -1,0 +1,75 @@
+.footer {
+    padding-top: 1650px; // Adjust as needed
+    background-color: #f8f8f8; // Optional: Background color for footer
+
+    .container {
+        width: 80%; // Set the width of the container to 80%
+        margin: 0 auto; // Center the container within the footer
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .insi {
+            width: 100%; // Ensure the inner content spans the full container width
+
+            .row {
+                display: flex;
+                justify-content: space-between; // Distribute columns evenly
+
+                .col-3 {
+                   
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; // Center-align content within each column
+                    
+                    img {
+                        width: 200px; // Scale the image to 80% of its column's width
+                        height: 200px; // Maintain aspect ratio
+                        
+                    }
+
+                    ul {
+                        list-style-type: none; // Remove list bullets
+                        padding: 0;
+                        margin: 0;
+                        text-align: start; // Center the text within each list
+                        margin-top: 20px;
+
+                        li {
+                            padding-bottom: 10px; // Spacing between list items
+                            font-size: 16px; // Font size for list items
+                            color: #3f2803; // Text color for list items
+                            font-weight: 700;
+
+                            &:hover{
+                                cursor: pointer;
+                                color: #82c341;
+                            }
+                        }
+                    }
+                }
+            }
+            .register{
+                margin-top: 50px;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                text-align: start;
+                flex-direction: row;
+                p{
+                    font-family: 'OpenSans';
+                    color: #afafaf;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                .hov{
+                    color: #82c341;
+                    &:hover{
+                        cursor: pointer;
+                        color: #ff7d09;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.header .container .row .col-5.left {
+  padding-top: 25px;
+}
+.header .container .row .col-5.left a {
+  margin-left: 45px;
+}
+.header .container .row .col-7.right {
+  margin-top: 25px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .row .col-7.right .icon {
+  display: flex;
+  align-items: center;
+}
+.header .container .row .col-7.right .icon .icon-container {
+  display: flex;
+  align-items: center;
+}
+.header .container .row .col-7.right .icon .icon-container svg {
+  width: 40px;
+  height: 35px;
+  fill: white;
+}
+.header .container .row .col-7.right .icon .detail {
+  font-weight: 700;
+  color: white;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.header .container .row .col-7.right .icon .detail .text-line1 {
+  font-size: 15px;
+}
+.header .container .row .col-7.right .icon .detail .text-line2 {
+  font-size: 20px;
+}
+.header .container .row .col-7.right .right svg:hover, .header .container .row .col-7.right .left svg:hover {
+  transition: 0.3 ease-in;
+  fill: rgba(241, 231, 231, 0.847);
+}

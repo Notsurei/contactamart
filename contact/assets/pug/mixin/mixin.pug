@@ -1,0 +1,76 @@
+mixin head_setting(data_page)
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    |
+    |
+    title= data_page.title_page +' | '+ data.general.title_website
+    |
+    |
+    link(rel='shortcut icon' type='image/png' href= data.general.url_favicon)
+    link(rel='icon' type='image/png' href= data.general.url_favicon)
+    |
+    |
+    meta(property='og:title' content= data_page.title_page +' | '+ data.general.title_website)
+    meta(name='description' content= data.general.description_website +', '+ data_page.description_page)
+    meta(name='keywords' content= data.general.keywords_website +', '+ data_page.keywords_page)
+    link(rel='image_src' type='image/jpg' href= data.general.url_image_page)
+    |
+    |
+    meta(property='og:url' content= data.general.url_website)
+    meta(property='og:type' content='website')
+    meta(property='og:description' content= data.general.description_website +', '+ data_page.description_page)
+    meta(property='og:image' content= data.general.url_image_page)
+    meta(property='og:image:alt' content= data_page.title_page +' | '+ data.general.title_website)
+    meta(property='og:type' content='website')
+    |
+    |
+    meta(name='twitter:title' content= data_page.title_page +' | '+ data.general.title_website)
+    meta(name='twitter:card' content= data.general.url_image_page)
+    meta(name='twitter:description' content= data.general.description_website +', '+ data_page.description_page)
+    meta(name='twitter:image' content= data.general.url_image_page)
+    |
+    |
+    meta(name='dc.created' content= data.general.author)
+    meta(name='dc.publisher' content= data.general.author)
+    meta(name='dc.rights.copyright' content= data.general.author)
+    meta(name='dc.creator.name' content= data.general.author)
+    |
+    |
+    meta(name='robots' content='noindex, follow')
+    meta(name='revisit-after' content='3 days')
+    meta(name='rating' content='general')
+    link(rel='alternate' href= data.general.url_website hreflang= data.general.hreflang_website)
+    link(href= data.general.url_website rel='canonical')
+    meta(name='copyright' content= data.general.author)
+    meta(name='author' content= data.general.author)
+    |
+    |
+    meta(http-equiv='cache-control' content='no-cache')
+    meta(http-equiv='expires' content='0')
+    meta(http-equiv='pragma' content='no-cache')
+    |
+    |
+    // CSS
+    each item in data_page.link_css_page
+        link(rel='stylesheet' type='text/css' href= 'css/'+ item +'.css')
+
+mixin render_link_js(data_page)
+    // JS
+    each item in data_page.link_js_page
+        script(src='js/'+ item +'.js')
+    // end JS
+
+mixin render_col(prop)
+    each item in prop 
+        li.sub-item
+            a.sub-link(href='#')=item.title 
+            ul.sub-menu-mini
+                each i in item.content
+                    li.sub-item-mini
+                        a.sub-link-mini(href='#')=i.title
+                            if(i.sale) 
+                                span sale 
+                            else if(i.leaf)
+                                img(src="https://a-mart.axiomthemes.com/wp-content/uploads/2020/05/leaf.png", alt="")
+

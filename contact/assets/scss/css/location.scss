@@ -1,0 +1,321 @@
+.location {
+  position: absolute; 
+  top: 50%; 
+  left: 0; 
+  width: 100%; 
+  z-index: 10; 
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .in {
+      width: 90%;
+      border: 1px dashed #efe9e3;
+      border-radius: 20px; 
+      
+      .map {
+        padding-top: 70px;
+        padding-left: 50px;
+        background-color: white;
+        border-radius: 10px; 
+        
+        h1 {
+          font-family: 'Raleway';
+          font-weight: 700;
+          color: #82c341;
+          padding-bottom: 30px;
+        }
+        
+        p {
+          font-size: 22px;
+          color: #000;
+          font-weight: 500;
+          padding-bottom: 20px;
+        }
+
+        iframe{
+          width: 95%;
+          border-radius: 10px;
+        }
+      }
+      
+      .locate {
+        padding-top: 70px;
+        background-color: white;
+        
+        .row {
+          .col-3 {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+
+            h1 {
+              font-family: 'Raleway';
+              font-weight: 700;
+              color: #82c341;
+
+            }
+            
+            p {
+              width: 80%;
+              color: #3f2803;
+              font-size: 16px;
+              padding-bottom: 3px; // Giảm khoảng cách dưới của p để gần với .openhours hơn
+            }
+            
+            .openhours {
+              color: #919191;
+              font-size: 15px;
+              font-weight: 400;
+              margin-top: 0; // Đảm bảo không có khoảng cách trên cho .openhours
+            }
+            .PhoneNum {
+              color: #919191;
+              font-size: 15px;
+              font-weight: 400;
+              margin-top: -15px; // Đảm bảo không có khoảng cách trên cho .openhours
+
+              &:hover{
+                cursor: pointer;
+                color: #ff7d09;
+              }
+            }
+            .Email {
+              color: #919191;
+              font-size: 15px;
+              font-weight: 400;
+              margin-top: -15px; // Đảm bảo không có khoảng cách trên cho .openhours
+
+              &:hover{
+                cursor: pointer;
+                color: #ff7d09;
+              }
+            }
+
+            .Pos{
+              display: flex;
+              flex-direction: row;
+              svg{
+                fill: #82c341;
+                width: 16px;
+                height: 16px;
+                margin-top: 5px;
+
+                &:hover{
+                  cursor: pointer;
+                  fill: #FF7D09;
+                }
+              }
+              span{
+                margin-left: 5px;
+                font-size: 17px;
+                color: #82c341;
+                font-weight: 400;
+                &:hover{
+                  cursor: pointer;
+                  color: #FF7D09;
+                }
+              }
+              .deli{
+                margin-left: 30px;
+              }
+            }
+          }
+        }
+      }
+      .send{
+        padding-top: 100px;
+        width: 95%;
+        .ins{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          border: 2px dashed #efe9e3;
+          border-radius: 10px;
+          padding: 40px;
+          margin-top: 10px;
+          h3{
+            font-family: 'Raleway';
+            color: #FF7D09;
+            margin-top: 5px;
+            margin-right: 50px;
+            font-weight: 700;
+          }
+          input{
+            width: 325px;
+            height: 50px;
+            border: 1px solid #FF7D09;
+            border-right: none;
+            padding-left: 20px;
+            align-items: self-start;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+          button{
+            height: 50px;
+            background-color: white;
+            padding: 0px 10px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px solid #FF7D09;
+            border-left: none;
+            margin-right: 40px;
+            svg{
+                width: 40px;
+                height: 40px;
+                fill: #ff7d09;
+                &:hover{
+                    fill: #82c341;
+                }
+            }
+          }
+          .social{
+            fill: #82c341;
+            margin-right: 20px;
+            margin-top: 10px;
+            width: 30px;
+            height: 30px;
+
+            &:hover{
+              cursor: pointer;
+              fill: #FF7D09;
+            }
+
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .message {
+        padding-top: 100px;
+        padding-bottom: 70px;
+        
+        .row {
+          .pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // padding-bottom: 50px;
+      
+            .bg-img {
+              margin-left: 5%;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              height: 569px;
+              flex-direction: column;
+              background-image: url('https://a-mart.axiomthemes.com/wp-content/uploads/2020/04/quote_patern.png');
+              background-clip: content-box;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-color: #82c341;
+              background-size: contain;
+              border-radius: 10px;
+              width: 85%;
+      
+              h3 {
+                padding-top: 50px;
+                font-size: 5rem;
+                font-family: 'Raleway';
+                color: white;
+                font-weight: 700;
+                margin: 0;
+              }
+      
+              .call {
+                font-family: 'Raleway';
+                padding-top: 8px;
+                font-size: 2.5rem;
+                color: white;
+                font-weight: 700;
+                margin-bottom: 0;
+              }
+      
+              .phone {
+                font-family: 'Raleway';
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: white;
+                margin-top: -15px;
+              }
+
+              img {
+                max-width: 100%; 
+                height: auto; 
+                border-radius: 10px; 
+                margin-top: 70px; 
+              }
+            }
+          }
+          .send-Email{
+            display: flex;
+            flex-direction: column;
+            h3{
+              font-family: 'Raleway';
+              font-size: 45px;
+              color: #82c341;
+              font-weight: 700;
+              padding-bottom: 50px;
+            }
+            input{
+              width: 90%;
+              height: 50px;
+              border: 2px solid #efe9e3;
+              padding-left: 20px;
+              justify-content: start;
+              align-items: start;
+              border-radius: 5px;
+              margin-bottom: 10px;
+            }
+            .EM {
+              height: 250px;
+              resize: vertical;
+              box-sizing: border-box; 
+              vertical-align: top; 
+              line-height: 1.2;
+              overflow-y: auto;
+              overflow-wrap: break-word;
+              border: 2px solid #efe9e3;
+              border-radius: 5px;
+              width: 90%;
+            }
+            
+            .EM::placeholder {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              transition: 0.2s ease;
+              opacity: 1;
+            }
+            
+            &::focus{
+              vertical-align: text-top;
+            }
+
+          }
+          button {
+            font-family: 'Sunnydino';
+            background-color: #82c341;
+            color: #ffffff;
+            border: none;
+            padding: 7px 7px;
+            font-size: 40px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 260px;
+            // margin-right: 7%;
+            width: 45%;
+  
+            &:hover {
+              cursor: pointer;
+              background-color: #ff7d09;
+            }
+        }
+        }
+      }
+    }
+  }
+}

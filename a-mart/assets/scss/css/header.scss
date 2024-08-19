@@ -1,0 +1,55 @@
+.header {
+  .container {
+    .row {
+      .col-5.left {
+        a {
+          margin-left: 45px;
+        }
+        padding-top: 25px;
+      }
+      .col-7.right {
+        margin-top: 25px;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icon {
+          display: flex;
+          align-items: center;
+          .icon-container {
+            display: flex;
+            align-items: center;
+            svg {
+              width: 40px;
+              height: 35px;
+              fill: white;
+            }
+          }
+          .detail {
+            font-weight: 700;
+            color: white;
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            .text-line1 {
+              font-size: 15px;
+            }
+            .text-line2 {
+              font-size: 20px;
+            }
+            
+          }
+        }
+        .right, .left{
+          svg{
+            &:hover{
+              transition: 0.3 ease-in;
+              fill: rgba(241, 231, 231, 0.847)
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.footer {
+  padding-top: 1650px;
+  background-color: #f8f8f8;
+}
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .insi {
+  width: 100%;
+}
+.footer .container .insi .row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .insi .row .col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer .container .insi .row .col-3 img {
+  width: 200px;
+  height: 200px;
+}
+.footer .container .insi .row .col-3 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: start;
+  margin-top: 20px;
+}
+.footer .container .insi .row .col-3 ul li {
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #3f2803;
+  font-weight: 700;
+}
+.footer .container .insi .row .col-3 ul li:hover {
+  cursor: pointer;
+  color: #82c341;
+}
+.footer .container .insi .register {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  flex-direction: row;
+}
+.footer .container .insi .register p {
+  font-family: "OpenSans";
+  color: #afafaf;
+  font-size: 17px;
+  font-weight: 500;
+}
+.footer .container .insi .register .hov {
+  color: #82c341;
+}
+.footer .container .insi .register .hov:hover {
+  cursor: pointer;
+  color: #ff7d09;
+}

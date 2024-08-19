@@ -1,0 +1,467 @@
+@mixin transition($value) {
+    transition: $value;
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+}
+
+@mixin transitionDelay($value) {
+    transition-delay: $value;
+    -webkit-transition-delay: $value;
+    -moz-transition-delay: $value;
+    -ms-transition-delay: $value;
+    -o-transition-delay: $value;
+}
+
+@mixin widthCalc($value) {
+    width: calc(#{$value});
+    width: -webkit-calc(#{$value});
+    width: -moz-calc(#{$value});
+    width: -ms-calc(#{$value});
+    width: -o-calc(#{$value});
+}
+
+@mixin opacity($value){
+    opacity: $value;
+    $opcity-fillter: $value * 100;
+    filter: alpha(opacity= $opcity-fillter);
+}
+
+@mixin borderRadius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+}
+
+@mixin boxShadow($value) {
+    box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -ms-box-shadow: $value;
+    -o-box-shadow: $value;
+}
+
+@mixin heightCalc($value) {
+    height: calc(#{$value});
+    height: -webkit-calc(#{$value});
+    height: -moz-calc(#{$value});
+    height: -ms-calc(#{$value});
+    height: -o-calc(#{$value});
+}
+
+@mixin brightness($value) {
+    filter: brightness($value);
+    -webkit-filter: brightness($value);
+    -moz-filter: brightness($value);
+    -ms-filter: brightness($value);
+    -o-filter: brightness($value);
+}
+
+@mixin splitText($row, $maxHeight){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    max-height: $maxHeight;
+}
+
+@mixin splitText1($row, $maxHeight) {
+    $maxHeight: $maxHeight + 4;
+
+    $maxHeightTotal: $maxHeight * $row;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    max-height: $maxHeightTotal+px;
+    line-height: $maxHeight+px;
+}
+
+@mixin splitText2($row, $maxHeight) {
+    $maxHeightTotal: $maxHeight * $row;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    max-height: $maxHeightTotal+px;
+    min-height: $maxHeightTotal+px;
+    line-height: $maxHeight+px;
+}
+
+@mixin splitLine($row){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+}
+
+@mixin transform($value) {
+    transform: $value;
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+}
+
+@mixin appearanceInput($value) {
+    appearance: $value;
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    -ms-appearance: $value;
+    -o-appearance: $value;
+}
+
+@mixin objectFit($value) {
+    object-fit: $value;
+    -webkit-object-fit: $value;
+    -moz-object-fit: $value;
+    -ms-object-fit: $value;
+    -o-object-fit: $value;
+}
+
+@mixin propertyAllCode($property, $value) {
+    #{$property}: $value;
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+}
+
+@mixin calc($type, $value) {
+    #{$type}: calc(#{$value});
+    #{$type}: -webkit-calc(#{$value});
+    #{$type}: -moz-calc(#{$value});
+    #{$type}: -ms-calc(#{$value});
+    #{$type}: -o-calc(#{$value});
+}
+
+@mixin bgGradient($value) {
+    background-image: -webkit-linear-gradient($value);
+    background-image: -moz-linear-gradient($value);
+    background-image: -ms-linear-gradient($value);
+    background-image: -o-linear-gradient($value);
+    background-image: linear-gradient($value);
+}
+
+@mixin flex($value) {
+    -webkit-box-flex: 0;
+    flex: 0 0 $value;
+    -webkit-flex: 0 0 $value;
+    -moz-flex: 0 0 $value;
+    -ms-flex: 0 0 $value;
+    -o-flex: 0 0 $value;
+    max-width: $value;
+}
+
+@mixin order($value) {
+    -webkit-box-ordinal-group: $value + 1;
+    -ms-flex-order: $value;
+    order: $value;
+}
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin customTable1() {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        td {
+            padding: 10px 15px;
+            border: 1px solid $color7;
+        }
+    }
+}
+
+@mixin customText1() {
+    font-size: 20px;
+    color: $color4;
+    overflow-x: auto;
+    @include customTable1();
+    font-weight: 400;
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+    }
+
+    img {
+        max-width: 100% !important; 
+        height: auto !important;
+    }
+
+    a {
+        color: $color69;
+        @include transition(0.5s);
+        text-decoration: underline;
+
+        &:hover {
+            color: $color3;
+        }
+    }
+
+    > * {
+        margin: 0 0 15px 0;
+
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 1800px) {
+        font-size: 16px;
+    }
+}
+
+@mixin customTextMB1() {    
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@function creatNameFontWeight($weight) {
+    $nameFontWeight: '';
+
+    @if $weight == 100 {
+        $nameFontWeight: Thin;
+    }
+
+    @if $weight == 200 {
+        $nameFontWeight: ExtraLight;
+    }
+
+    @if $weight == 300 {
+        $nameFontWeight: Light;
+    }
+
+    @if $weight == 400 {
+        $nameFontWeight: Regular;
+    }
+
+    @if $weight == 500 {
+        $nameFontWeight: Medium;
+    }
+
+    @if $weight == 600 {
+        $nameFontWeight: SemiBold;
+    }
+
+    @if $weight == 700 {
+        $nameFontWeight: Bold;
+    }
+
+    @if $weight == 800 {
+        $nameFontWeight: ExtraBold;
+    }
+
+    @if $weight == 900 {
+        $nameFontWeight: 'Black';
+    }
+
+    @return $nameFontWeight;
+}
+
+@mixin renderUrlFont($nameFont, $fontWeights, $type) {
+    @each $weight in $fontWeights {
+        $nameFontWeight: creatNameFontWeight($weight);
+    
+        @font-face {
+            font-family: $nameFont;
+            src: url(../fonts/#{$nameFont}-#{$nameFontWeight}.#{$type});
+            font-weight: $weight;
+            font-style: normal;
+        }
+    }
+}
+
+@mixin slideDotsMB() {
+    padding-bottom: 35px;
+    
+    .slick-dots {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: none;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        @include translate(-50%, 0);
+        z-index: 500;
+
+        li {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            position: relative;
+            margin: 0 6px;
+            cursor: pointer;
+
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include translate(-50%, -50%);
+                content: '';
+                width: 15px;
+                height: 15px;
+                background-color: $color15;
+                @include transition(0.5s);
+                @include borderRadius(30px);
+            }
+
+            &.slick-active,
+            &:hover {
+                &:after {
+                    background-color: $color3;
+                }
+            }
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    &.hideDots {
+        padding-bottom: 0;
+
+        .slick-dots {
+            display: none;
+        }
+    }
+}
+
+@mixin select2All() {
+    // select 2
+    .select2-dropdown {
+        border-color: $color12;
+        z-index: 99999999998;
+    }
+    
+    .select2-container--default {
+        .select2-results__option--highlighted[aria-selected] {
+            background-color: $color2;
+        }
+    }
+    
+    .select2-container--default .select2-search--dropdown .select2-search__field {
+        @include borderRadius(0);
+        font-size: 14px;
+        line-height: 20px;
+        border-color: $color12;
+    
+        &:focus {
+            outline: unset;
+            outline: none;
+        }
+    }
+    // end select 2
+}
+
+@mixin select2Custom() {
+    .select2-container {
+        width: auto !important;
+        margin-left: 5px;
+    }
+
+    .select2-container--default {
+        .select2-selection--single {
+            border: 1px solid $color4;
+            @include borderRadius(3px);
+            height: 32px;
+            line-height: 32px;
+            padding: 0 30px 0 10px;
+            font-size: 14px;
+            color: $color3;
+            background-color: $color4;
+            border: none;
+
+            .select2-selection__arrow {
+                height: 32px;
+            }
+        }
+    }
+}
+
+@mixin setSlideOtherArticle() {
+    .pageArticleList.other {
+        .wrapList {
+            margin: 30px 0 0 0;
+    
+            @media (max-width: 991px) {
+                margin: 15px 0 0 0;
+            }
+        }
+    
+        .itemList {
+            padding: 0 15px;
+            height: auto;
+            float: none;
+            margin: 0;
+    
+            .contentCol {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            @media screen and (max-width: 1200px) {
+                padding: 0 7.5px;
+    
+                &:nth-child(3) {
+                    margin: 0;
+                }
+            }
+    
+            @media screen and (max-width: 575px) {
+                &:nth-child(2) {
+                    margin: 0;
+                }
+            }
+        }
+    
+        .wrapBtnBook {
+            @media screen and (max-width: 575px) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    
+        .slick-track {
+            display: flex;
+        }
+    
+        .slick-list {
+            margin: 0 -15px;
+    
+            @media screen and (max-width: 1200px) {
+                margin: 0 -7.5px;
+            }
+        }
+    
+        .slick-slider {
+            overflow: hidden;
+        }
+    }
+}

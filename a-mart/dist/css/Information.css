@@ -1,0 +1,122 @@
+.Information {
+  height: 750px;
+}
+.Information .container .row .col-4 {
+  margin-top: 100px;
+  color: white;
+}
+.Information .container .row .col-4 .In4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.Information .container .row .col-4 .In4 svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+}
+.Information .container .row .col-4 .In4 h5 {
+  font-weight: 700;
+  font-family: "Raleway";
+  margin-top: 20px;
+  font-size: 25px;
+}
+.Information .container .row .col-4 .In4 ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+.Information .container .row .col-4 .In4 ul li {
+  font-size: 15px;
+}
+.Information .container .row .col-4 .In4 span {
+  margin-top: 10px;
+  width: 70%;
+  font-size: 15px;
+}
+.Information .container .email {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Information .container .email h2 {
+  font-family: "Raleway";
+  font-weight: 700;
+  color: white;
+}
+.Information .container .email .input-button {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.Information .container .email .input-button input {
+  width: 500px;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+  align-items: self-start;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.Information .container .email .input-button button {
+  height: 50px;
+  background-color: white;
+  border: none;
+  padding: 0px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.Information .container .email .input-button button svg {
+  width: 40px;
+  height: 40px;
+  fill: #ff7d09;
+}
+.Information .container .email .input-button button svg:hover {
+  fill: #82c341;
+}
+.Information .container .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  background-color: #82c341;
+}
+.Information .container .social svg {
+  background-color: #82c341;
+  fill: white;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+.Information .container .social svg:hover {
+  cursor: pointer;
+  fill: #e5e5e5;
+}
+.Information .container .register {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+.Information .container .register p {
+  font-family: "OpenSans";
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+.Information .container .register .hov:hover {
+  cursor: pointer;
+  color: #e5e5e5;
+}

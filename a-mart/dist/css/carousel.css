@@ -1,0 +1,141 @@
+.Carousel .container {
+  position: relative;
+  width: 100%;
+}
+.Carousel .Find-store {
+  width: 100%;
+  background-color: #ffffff;
+  color: #82c341;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+.Carousel .Find-store .left {
+  font-family: "SummerJoy";
+  background-color: #ffffff;
+  flex: 1;
+  padding-left: 7%;
+  font-size: 45px;
+}
+.Carousel .Find-store button {
+  font-family: "Sunnydino";
+  background-color: #ff7d09;
+  color: #ffffff;
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 5px;
+  margin-right: 7%;
+}
+.Carousel .Find-store button:hover {
+  background-color: #82c341;
+}
+.Carousel .Caro {
+  position: relative;
+}
+.Carousel .Caro .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Carousel .Caro .item img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.75);
+}
+.Carousel .Caro .item .description {
+  font-family: "Sunnydino";
+  text-align: center;
+  font-weight: 700;
+  font-size: 100px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent !important;
+  position: absolute;
+  color: #ffffff;
+  z-index: 1000;
+  width: 800px;
+}
+.Carousel .Caro .item .description2 {
+  display: flex;
+  flex-direction: row;
+  font-family: "Sunnydino";
+  font-weight: 900;
+  top: 65%;
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: transparent !important;
+  position: absolute;
+  color: #ffffff;
+  z-index: 1000;
+  width: 800px;
+}
+.Carousel .Caro .item .description2 img {
+  width: 115px;
+  height: 170px;
+  margin-right: 25%;
+  filter: brightness(1);
+}
+.Carousel .Caro .item .description2 span {
+  font-size: 65px;
+}
+.Carousel .Caro .item .description3 {
+  display: flex;
+  top: 20%;
+  left: 8%;
+  background-color: transparent !important;
+  position: absolute;
+  color: #ffffff;
+  z-index: 1000;
+  width: 800px;
+}
+.Carousel .Caro .item .description3 img {
+  width: 350px;
+  height: 375px;
+  margin-right: 25%;
+  filter: brightness(1);
+}
+.Carousel .prev-arrow,
+.Carousel .next-arrow {
+  position: absolute;
+  top: 55%;
+  background-color: #82c341;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+.Carousel .prev-arrow svg,
+.Carousel .next-arrow svg {
+  height: 20px;
+}
+.Carousel .prev-arrow:hover,
+.Carousel .next-arrow:hover {
+  fill: #ffffff;
+}
+.Carousel .prev-arrow {
+  width: 90px;
+  height: 90px;
+  left: -35px;
+  border-radius: 50%;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Carousel .next-arrow {
+  width: 90px;
+  height: 90px;
+  right: -35px;
+  border-radius: 50%;
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

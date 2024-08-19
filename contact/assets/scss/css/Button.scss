@@ -1,0 +1,98 @@
+.scrollback {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    display: none; 
+    z-index: 1000;
+    
+    &.visible {
+        display: block; 
+    }
+    
+    a {
+        button {
+            background-color: #82c341;
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                background-color: #8bcf4f;
+            }
+
+            svg {
+                fill: white;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.func {
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+
+    button {
+        background-color: #82c341;
+        border: none;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 5px;
+        position: relative; // Thêm để cho phép định vị tuyệt đối của span bên trong
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: #8bcf4f;
+            transform: translateX(-5px); /* Slide left on hover */
+
+            .text {
+                opacity: 1;
+                right: 100%; // Vị trí của text khi hover
+            }
+        }
+
+        svg {
+            fill: white;
+            width: 20px;
+            height: 20px;
+        }
+
+        .text {
+            font-family: 'OpenSans';
+            font-size: 11px;
+            font-weight: 600;
+            position: absolute;
+            right: 0%; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            white-space: nowrap;
+            height: auto; 
+            line-height: 60px; 
+            opacity: 0;
+            transition: opacity 0.3s ease, right 0.3s ease;
+            background-color: #2d2d2d; 
+            color: white; 
+            padding: 0px 20px;
+            // border-radius: 5px;
+        }
+    }
+}

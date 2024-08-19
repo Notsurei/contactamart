@@ -1,0 +1,23 @@
+.Contact {
+  padding-top: 10px;
+}
+.Contact .container .content {
+  position: relative;
+}
+.Contact .container .content img {
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(0.75);
+}
+.Contact .container .content h1 {
+  font-family: "Sunnydino";
+  font-size: 90px;
+  font-weight: 600;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

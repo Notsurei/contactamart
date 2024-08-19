@@ -1,0 +1,441 @@
+{
+	"data": {
+		"subMenuMini": [
+			{
+				"title": "Vegetable",
+				"content": [
+					{
+						"title": "Sale",
+						"sale": true,
+						"leaf": false
+					},
+					{
+						"title": "Organic",
+						"sale": false,
+						"leaf": true
+					},
+					{
+						"title": "Asparagus",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Avocados",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Beans & Peas",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Broccoli",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Brussels Sprouts",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Carrots",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Corn",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Cucumbers",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Eggplants",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Mushrooms",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Onion & Garlic",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Peppers",
+						"sale": false,
+						"leaf": false
+					}
+				]
+			},
+			{
+				"title": "Fruits",
+				"content": [
+					{
+						"title": "Sale",
+						"sale": true,
+						"leaf": false
+					},
+					{
+						"title": "Organic",
+						"sale": false,
+						"leaf": true
+					},
+					{
+						"title": "Apples",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Bananas",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Berries & Cherries",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Citrus",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Dried Fruits & Nuts",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Grapes",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Local Farm Share",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Melons",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Tropical",
+						"sale": false,
+						"leaf": false
+					}
+				]
+			},
+			{
+				"title": "Meat",
+				"content": [
+					{
+						"title": "Sale",
+						"sale": true,
+						"leaf": false
+					},
+					{
+						"title": "Organic",
+						"sale": false,
+						"leaf": true
+					},
+					{
+						"title": "Beef",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Pork",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Lamb",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Veal & Specialty",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Chicken",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Duck & Specialty",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Prepped",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Turkey",
+						"sale": false,
+						"leaf": false
+					}
+				]
+			},
+			{
+				"title": "Seafood",
+				"content": [
+					{
+						"title": "Sale",
+						"sale": true,
+						"leaf": false
+					},
+					{
+						"title": "Organic",
+						"sale": false,
+						"leaf": true
+					},
+					{
+						"title": "Crabs",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Fish Fillet",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Fish Steaks",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Fish Whole",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Lobster",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Mussels & Clams",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Scallops",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Shrimp",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Oyster",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Salmon",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Specialty",
+						"sale": false,
+						"leaf": false
+					}
+				]
+			},
+			{
+				"title": "Bakery",
+				"content": [
+					{
+						"title": "Sale",
+						"sale": true,
+						"leaf": false
+					},
+					{
+						"title": "Organic",
+						"sale": false,
+						"leaf": true
+					},
+					{
+						"title": "Bagels & Byalis",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Baguettes",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Boules & Batard",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Croissants & Danish",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Rolls & Buns",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Sliced",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Baking Kits",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Cakes & Cupcake",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Cookies & Bars",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Pies & Tarts",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Pound Cakes",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Pudding & Suffle",
+						"sale": false,
+						"leaf": false
+					}
+				]
+			},
+			{
+				"title": "Cheese",
+				"content": [
+					{
+						"title": "Sale",
+						"sale": true,
+						"leaf": false
+					},
+					{
+						"title": "Organic",
+						"sale": false,
+						"leaf": true
+					},
+					{
+						"title": "Blue",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Brie & Camembert",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Cheddar & Jack",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Feta",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Gouda",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Pudding & Suffle",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Mozzarella",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Pamesan",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Sheep",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Swiss Alpine",
+						"sale": false,
+						"leaf": false
+					},
+					{
+						"title": "Cheese Plates",
+						"sale": false,
+						"leaf": false
+					}
+				]
+			}
+		],
+		"language_menu": [
+			{
+				"img": "images/language/vi.svg",
+				"title": "Việt Nam",
+				"text": "VI"
+			},
+			{
+				"img": "images/language/en.svg",
+				"title": "English",
+				"text": "EN"
+			}
+		],
+		"footer": [
+			{
+				"content": [
+					{
+						"inside": "Who we are"
+					},
+					{
+						"inside": "What we offer"
+					},
+					{
+						"inside": "Careers"
+					},
+					{
+						"inside": "Contacts"
+					}
+				]
+			}
+		]
+	}
+}

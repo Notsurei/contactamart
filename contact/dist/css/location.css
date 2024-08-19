@@ -1,0 +1,303 @@
+.location {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.location .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location .container .in {
+  width: 90%;
+  border: 1px dashed #efe9e3;
+  border-radius: 20px;
+}
+.location .container .in .map {
+  padding-top: 70px;
+  padding-left: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+.location .container .in .map h1 {
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #82c341;
+  padding-bottom: 30px;
+}
+.location .container .in .map p {
+  font-size: 22px;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.location .container .in .map iframe {
+  width: 95%;
+  border-radius: 10px;
+}
+.location .container .in .locate {
+  padding-top: 70px;
+  background-color: white;
+}
+.location .container .in .locate .row .col-3 {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.location .container .in .locate .row .col-3 h1 {
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #82c341;
+}
+.location .container .in .locate .row .col-3 p {
+  width: 80%;
+  color: #3f2803;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+.location .container .in .locate .row .col-3 .openhours {
+  color: #919191;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.location .container .in .locate .row .col-3 .PhoneNum {
+  color: #919191;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: -15px;
+}
+.location .container .in .locate .row .col-3 .PhoneNum:hover {
+  cursor: pointer;
+  color: #ff7d09;
+}
+.location .container .in .locate .row .col-3 .Email {
+  color: #919191;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: -15px;
+}
+.location .container .in .locate .row .col-3 .Email:hover {
+  cursor: pointer;
+  color: #ff7d09;
+}
+.location .container .in .locate .row .col-3 .Pos {
+  display: flex;
+  flex-direction: row;
+}
+.location .container .in .locate .row .col-3 .Pos svg {
+  fill: #82c341;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+}
+.location .container .in .locate .row .col-3 .Pos svg:hover {
+  cursor: pointer;
+  fill: #FF7D09;
+}
+.location .container .in .locate .row .col-3 .Pos span {
+  margin-left: 5px;
+  font-size: 17px;
+  color: #82c341;
+  font-weight: 400;
+}
+.location .container .in .locate .row .col-3 .Pos span:hover {
+  cursor: pointer;
+  color: #FF7D09;
+}
+.location .container .in .locate .row .col-3 .Pos .deli {
+  margin-left: 30px;
+}
+.location .container .in .send {
+  padding-top: 100px;
+  width: 95%;
+}
+.location .container .in .send .ins {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px dashed #efe9e3;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 10px;
+}
+.location .container .in .send .ins h3 {
+  font-family: "Raleway";
+  color: #FF7D09;
+  margin-top: 5px;
+  margin-right: 50px;
+  font-weight: 700;
+}
+.location .container .in .send .ins input {
+  width: 325px;
+  height: 50px;
+  border: 1px solid #FF7D09;
+  border-right: none;
+  padding-left: 20px;
+  align-items: self-start;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.location .container .in .send .ins button {
+  height: 50px;
+  background-color: white;
+  padding: 0px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #FF7D09;
+  border-left: none;
+  margin-right: 40px;
+}
+.location .container .in .send .ins button svg {
+  width: 40px;
+  height: 40px;
+  fill: #ff7d09;
+}
+.location .container .in .send .ins button svg:hover {
+  fill: #82c341;
+}
+.location .container .in .send .ins .social {
+  fill: #82c341;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.location .container .in .send .ins .social:hover {
+  cursor: pointer;
+  fill: #FF7D09;
+}
+.location .container .in .send .ins .social:last-child {
+  margin-right: 0;
+}
+.location .container .in .message {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.location .container .in .message .row .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location .container .in .message .row .pic .bg-img {
+  margin-left: 5%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 569px;
+  flex-direction: column;
+  background-image: url("https://a-mart.axiomthemes.com/wp-content/uploads/2020/04/quote_patern.png");
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #82c341;
+  background-size: contain;
+  border-radius: 10px;
+  width: 85%;
+}
+.location .container .in .message .row .pic .bg-img h3 {
+  padding-top: 50px;
+  font-size: 5rem;
+  font-family: "Raleway";
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+.location .container .in .message .row .pic .bg-img .call {
+  font-family: "Raleway";
+  padding-top: 8px;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.location .container .in .message .row .pic .bg-img .phone {
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-top: -15px;
+}
+.location .container .in .message .row .pic .bg-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+.location .container .in .message .row .send-Email {
+  display: flex;
+  flex-direction: column;
+}
+.location .container .in .message .row .send-Email h3 {
+  font-family: "Raleway";
+  font-size: 45px;
+  color: #82c341;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.location .container .in .message .row .send-Email input {
+  width: 90%;
+  height: 50px;
+  border: 2px solid #efe9e3;
+  padding-left: 20px;
+  justify-content: start;
+  align-items: start;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.location .container .in .message .row .send-Email .EM {
+  height: 250px;
+  resize: vertical;
+  box-sizing: border-box;
+  vertical-align: top;
+  line-height: 1.2;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  border: 2px solid #efe9e3;
+  border-radius: 5px;
+  width: 90%;
+}
+.location .container .in .message .row .send-Email .EM::-moz-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -moz-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 1;
+}
+.location .container .in .message .row .send-Email .EM:-ms-input-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -ms-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 1;
+}
+.location .container .in .message .row .send-Email .EM::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s ease;
+  opacity: 1;
+}
+.location .container .in .message .row .send-Email::focus {
+  vertical-align: text-top;
+}
+.location .container .in .message .row button {
+  font-family: "Sunnydino";
+  background-color: #82c341;
+  color: #ffffff;
+  border: none;
+  padding: 7px 7px;
+  font-size: 40px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 260px;
+  width: 45%;
+}
+.location .container .in .message .row button:hover {
+  cursor: pointer;
+  background-color: #ff7d09;
+}

@@ -1,0 +1,79 @@
+.Menu {
+    margin-top: -5px;
+
+    .container {
+        .main-item {
+            background-color: white;
+
+            .row {
+                margin: 0;
+            }
+
+            .col-6 {
+                padding: 0; 
+
+                .word {
+                    font-family: 'OpenSans';
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    // padding: 40px 50px 0 50px;
+                    padding-left: 50px;
+                    padding-top: 40px;
+                    padding-right: 30px;
+
+                    p {
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        color: #82c341;
+                    }
+
+                    h1 {
+                        font-family: 'Raleway';
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                    }
+
+                    .des {
+                        font-family: 'OpenSans';
+                        color: #919191;
+                        font-size: 16px;
+                    }
+
+                    button {
+                        font-family: 'Raleway';
+                        background-color: #82c341;
+                        color: white;
+                        font-weight: 500;
+                        border: none;
+                        margin-top: 20px;
+                        padding: 7px 20px;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        border-radius: 5px;
+                        margin-right: 7%;
+
+                        &:hover {
+                            background-color: #ff7d09;
+                        }
+                    }
+                }
+
+                .img-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden; 
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,335 @@
+.Nav {
+    padding-top: 20px;
+  
+    .container {
+      display: flex;
+      align-items: center; // Đảm bảo hình ảnh và các mục điều hướng thẳng hàng
+    }
+  
+    .nav-logo {
+      height: 110px; // Chiều cao của logo (có thể điều chỉnh tùy ý)
+      margin-right: 60px; // Khoảng cách giữa logo và danh sách điều hướng
+    }
+  
+    .inside {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      height: 70px;
+    }
+  
+    .nav-list {
+      background-color: white;
+      list-style-type: none;
+      margin: 0;
+      padding-left: 250px; // Đặt về 0 để không ảnh hưởng đến căn chỉnh của logo
+      
+      display: flex;
+
+      
+  
+      .nav-item {
+        background-color: white;
+        margin-right: 20px;
+        position: relative;
+        a{
+          text-decoration: none;
+        }
+        .forcart {
+          color: #fff;
+          background-color: black;
+          border-radius: 50%; // Make it circular
+          padding: 2px 8px; // Increase padding to make it wider
+          font-size: 100%; // Adjust font size
+          position: absolute; // Position it absolutely relative to .cart
+          top: -15px; // Move it upwards
+          right: -15px; // Move it to the right
+          z-index: 1000; // Ensure it is on top
+        }
+
+        .search {
+          width: 40px; // Đặt kích thước mong muốn cho SVG
+          height: 30px;
+          fill: black; // Đặt màu cho SVG
+          margin-right: -10px; // Khoảng cách giữa SVG và văn bản nếu cần
+
+          &:hover{
+            fill: #FF7D09;
+          }
+        }
+        .heart {
+          width: 40px; // Đặt kích thước mong muốn cho SVG
+          height: 30px;
+          fill: #FF7D09; // Đặt màu cho SVG
+          margin-right: -10px; // Khoảng cách giữa SVG và văn bản nếu cần
+          position: relative;
+
+          &:hover{
+            fill: #82c341;
+          }
+        }
+
+        .cart {
+          width: 40px; // Đặt kích thước mong muốn cho SVG
+          height: 30px;
+          fill: #82c341; // Đặt màu cho SVG
+          margin-right: -10px; // Khoảng cách giữa SVG và văn bản nếu cần
+
+          &:hover{
+            fill: #FF7D09;
+          }
+        }
+
+  
+        &:last-child {
+          margin-right: 0;
+        }
+  
+        &:first-child {
+          margin-left: 0; // Đặt về 0 để căn lề từ logo
+  
+          .nav-link {
+            color: black;
+          }
+  
+          .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            border-radius: 14px;
+            width: 200px;
+            z-index: 100;
+  
+            .sub-item {
+              padding: 10px 20px;
+              background-color: white;
+  
+              .sub-link {
+                color: #ff7d09;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                transition: color 0.3s;
+                background-color: white;
+  
+                &:hover {
+                  color: #82c341;
+                }
+              }
+            }
+          }
+  
+          &:hover .sub-menu {
+            display: block;
+          }
+        }
+  
+        &:nth-child(3) {
+          .sub-menu-grid {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -80vh;
+            background-color: white;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            border-radius: 14px;
+            width: 1200px;
+  
+            .sub-item {
+              display: flex;
+              flex-direction: column;
+              padding: 30px;
+              background-color: white;
+  
+              .sub-link {
+                color: #ff7d09;
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 500;
+                transition: color 0.3s;
+                background-color: white;
+  
+                &:hover {
+                  color: #82c341;
+                }
+              }
+            }
+          }
+  
+          &:hover .sub-menu-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+          }
+        }
+  
+        &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            border-radius: 14px;
+            font-weight: 500;
+            width: 200px;
+            z-index: 1000;
+  
+            .sub-item {
+              padding: 10px 20px;
+              background-color: white;
+  
+              .sub-link {
+                color: #ff7d09;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                transition: color 0.3s;
+                background-color: white;
+  
+                &:hover {
+                  color: #82c341;
+                }
+              }
+  
+              .sub-menu {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                background-color: white;
+                list-style: none;
+                padding: 10px 0;
+                margin: 0;
+                border-radius: 14px;
+                width: 200px;
+  
+                .sub-item {
+                  padding: 10px 20px;
+                  background-color: white;
+  
+                  .sub-link {
+                    color: #ff7d09;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transition: color 0.3s;
+  
+                    &:hover {
+                      color: #82c341;
+                    }
+                  }
+                }
+              }
+  
+              &:hover .sub-menu {
+                top: 50%;
+                display: block;
+              }
+            }
+          }
+  
+          &:hover .sub-menu {
+            display: block;
+          }
+        }
+  
+        .nav-link {
+          color: black;
+          font-weight: 700;
+          text-decoration: none;
+          background-color: white;
+          font-size: 20px;
+          margin-left: 18px;
+          font-weight: 600;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #82c341;
+          }
+  
+          &::after {
+            font-size: 12px;
+            color: #fff;
+          }
+        }
+  
+        .nav-item-with-submenu > .nav-link::after {
+          content: ' ▾';
+          font-size: 12px;
+          color: #fff;
+        }
+      }
+    }
+  
+    .nav-item:nth-child(3) {
+        
+      z-index: 1000;
+      .sub-menu-mini {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20px;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+  
+        .sub-item-mini {
+          text-align: left;
+          background-color: white;
+  
+          &:last-child{
+            padding-bottom: 25px;
+          }
+          span{
+            font-family: 'Raleway';
+            background-color:#ff7d09;
+            border-color: #FF7D09;
+            color: white;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 3px;
+            vertical-align: middle;
+          }
+  
+          .sub-link-mini {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+            background-color: white;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            white-space: nowrap;
+  
+            &:hover {
+              color: #82c341;
+            }
+          }
+          img{
+            width: 15px;
+            height: 20px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  

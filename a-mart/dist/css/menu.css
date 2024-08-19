@@ -1,0 +1,67 @@
+.Menu {
+  margin-top: -5px;
+}
+.Menu .container .main-item {
+  background-color: white;
+}
+.Menu .container .main-item .row {
+  margin: 0;
+}
+.Menu .container .main-item .col-6 {
+  padding: 0;
+}
+.Menu .container .main-item .col-6 .word {
+  font-family: "OpenSans";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-right: 30px;
+}
+.Menu .container .main-item .col-6 .word p {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #82c341;
+}
+.Menu .container .main-item .col-6 .word h1 {
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.Menu .container .main-item .col-6 .word .des {
+  font-family: "OpenSans";
+  color: #919191;
+  font-size: 16px;
+}
+.Menu .container .main-item .col-6 .word button {
+  font-family: "Raleway";
+  background-color: #82c341;
+  color: white;
+  font-weight: 500;
+  border: none;
+  margin-top: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-right: 7%;
+}
+.Menu .container .main-item .col-6 .word button:hover {
+  background-color: #ff7d09;
+}
+.Menu .container .main-item .col-6 .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Menu .container .main-item .col-6 .img-container img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
